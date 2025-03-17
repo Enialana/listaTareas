@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listaTareas-lulu</title>
+    <style>
+        div{
+            background-color: rgb(71, 249, 255);
+            width: 400px;
+            border-radius: 8px;
+
+        }
+        #botonAgregar{
+            background-color: rgb(61, 145, 145);
+            color: white;
+            border: solid 2px #055b66;
+            border-radius: 8px;
+            width: 80px;
+            height: 25px;
+        }
+        input{
+            background-color: #44ccc5;
+            border: solid 2px #055b66;
+            border-radius: 8px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="elemento">
+        <h1>📝  LISTA DE TAREAS  📝</h1>
+        
+    </div>
+    <form onsubmit="agregarTarea(); return false;">
+        <input type="text" id="nuevaTarea" placeholder="Escribe una tarea...">
+        <button id="botonAgregar" type="submit">Agregar</button>
+      </form>
+    <ul id="listaTareas">
+
+    </ul>
+
+</body>
+<script src="listaTareas.js"></script>
+</html>
